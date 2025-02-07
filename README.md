@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🖼️ My HTML & CSS Templates
 
 Welcome to my collection of **HTML & CSS templates**! 🎨 These are simple and responsive website templates built for practice and learning.
@@ -21,3 +22,7 @@ Each template is hosted using **GitHub Pages**. Click the links below to view th
 - **JavaScript** ⚡ (for interactive elements)  
 
 
+=======
+# my-web-templates
+A collection of HTML, CSS,  templates for web design practice.
+>>>>>>> 00e4b49e954fda7590de00c173cd7b141f7d9f20
