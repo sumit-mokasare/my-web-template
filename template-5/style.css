@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border:2px solid red; */
+
+}
+  body{
+    overflow-x: hidden;
+   }
+a {
+    text-decoration: none;
+}
+
+/*------------- heading -----------------*/
+header {
+    background: linear-gradient(190deg, rgb(0 0 0 / 90%), rgb(0 150 136 / 38%)), url('plant-nature.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh ;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+header nav {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+
+}
+
+header nav ul {
+    color: white;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 12px 12px;
+}
+
+header nav ul li a {
+    /* border: 2px solid red; */
+    color: gray;
+    padding: 11px 32px;
+    transition: all 1s ease-in-out;
+    text-transform: capitalize;
+    font-size: 1.10rem;
+}
+
+header nav ul li a:hover {
+    color: white;
+    background-color: #333333;
+}
+
+header label,
+header input {
+    display: none;
+}
+
+header .contant {
+    text-align: center;
+}
+
+header .contant .h1-pramary {
+    font-size: 7vw;
+    color: white;
+    letter-spacing: 1rem;
+    font-family: 'Space Mono', monospace;
+}
+
+header .contant .h2-pramary {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: white;
+    letter-spacing: 0.23rem;
+    font-family: 'Space Mono', monospace;
+}
+
+/* ----------------------section-1---------------------------- */
+.common-section {
+    width: 100vw;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 3rem;
+    background-color: #DFE8CC;
+}
+
+/*----------------------------------left side contant section-1  ---------------------------------------*/
+.common-section .left-side {
+    width: inherit;
+    height: inherit;
+}
+
+.common-section .left-side figure {
+    width: 31rem;
+    height: 20rem;
+    display: grid;
+    place-items: center;
+    margin: 13rem 0rem 0rem 3rem;
+    background-color: #6d8f8d;
+}
+
+.common-section .left-side img {
+    width: 25rem;
+    height: 24rem;
+    object-fit: cover;
+    transform: translatey(-9rem);
+}
+
+/*----------------------------------right side contant section-1  ---------------------------------------*/
+.common-section .right-side {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 2rem;
+}
+
+.common-section .right-side .h1-right {
+    font-size: 4rem;
+    text-decoration: bold;
+    font-family: 'Faustina', serif;
+    font: 2em sans-serif;
+
+}
+
+.common-section .right-side span {
+    line-height: 3rem;
+    font-size: 1.1rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.common-section .right-side p {
+    line-height: 1.45rem;
+    font-size: 1.1rem;
+    font-family: 'Space Mono', monospace;
+}
+
+#section-1 .right-side a {
+    letter-spacing: 0.12rem;
+    transition: 1s linear;
+    padding: 13px 17px;
+    color: black;
+    background-color: #6d8f8d;
+    font-family: 'Space Mono', monospace;
+}
+
+#section-1 .right-side a:hover {
+    color: black;
+    background: linear-gradient(140deg, #6d8f8d, yellow, pink)
+}
+
+.common-section .right-side button {
+    border: none;
+    transition: 1s linear;
+    margin: 2rem 2rem;
+    cursor: pointer;
+}
+
+/*------------------------- section-2----------------------- */
+#section-2 .boy2-img {
+    width: 25rem;
+    height: 24rem;
+    object-position: 46.16% 0%;
+    transform: translatey(-8rem);
+}
+
+#section-2 .right-side a {
+    letter-spacing: 0.12rem;
+    padding: 13px 17px;
+    border: 1px solid#6d8f8d;
+    color: black;
+    background-color: #6d8f8d;
+    border: none;
+    transition: 1s linear;
+    font-family: 'Space Mono', monospace;
+
+}
+
+#section-2 .right-side a:hover {
+    color: black;
+    background: linear-gradient(140deg, #6d8f8d, yellow, pink)
+}
+
+/* ------------------------section-3------------------------- */
+.common-middle-section {
+    width: 100vw;
+    height: 114vh;
+    padding: 0px 3rem;
+}
+
+.common-middle-section .center-div {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.common-middle-section .center-div figure {
+    /* position: absolute; */
+    display: grid;
+    place-items: center;
+    top: 12rem;
+    width: 68%;
+    height: 34%;
+    background-color: #979565;
+    ;
+}
+
+.common-middle-section .center-div img {
+    width: 57%;
+    /* transform: translateY(-14rem); */
+    height: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 23px;
+    object-position: 46.16% 9%;
+}
+
+/*---------------------------- left and right div------------------------------- --*/
+.common-middle-section .container {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+/* .common-middle-section .container .cantant{
+    padding:1rem 3rem;
+}  */
+.common-middle-section .container .cantant h1 {
+    font-size: 3rem;
+    word-break: break-all;
+    width: 27rem;
+    font: 2em sans-serif;
+    font-family: 'Faustina', serif;
+}
+
+.common-middle-section .container .cantant p {
+    font-size: 1.1rem;
+    width: 91%;
+    margin-left: 5rem;
+    line-height: 1.6rem;
+    font-family: 'Space Mono', monospace;
+}
+
+/* -------------------section-4th---------------- */
+.logo-section-4 {
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+    padding: 3rem;
+    background-color: #DFE8CC;
+    position: relative;
+}
+
+.logo-section-4 img {
+    width: 17%;
+}
+
+.logo-section-4 h3 {
+    font-size: 4rem;
+}
+
+.logo-section-4 p {
+    font-size: 1.5rem;
+
+}
+
+/* ----------------image gallery-section-4 -------*/
+
+/*-------------------- section-5----------------- */
+#section-5 img {
+    width: 20rem;
+    height: 29rem;
+    transform: translatey(-14rem);
+}
+
+#section-5 figure {
+    margin: 16rem 0rem 0rem 2rem;
+}
+
+#section-5 button {
+    cursor: pointer;
+    letter-spacing: 0.12rem;
+    padding: 13px 17px;
+    color: white;
+    border: 1px solid#6d8f8d;
+}
+
+/* section-6 */
+#section-6 figure {
+    width: 67%;
+    height: 30%;
+}
+
+/* -------------------section-7---------------------- */
+#section-7 {
+    height: 40%;
+    background-color: white;
+    padding-top: 1rem;
+}
+
+#section-7 img {
+    width: 35%;
+}
+
+/* --------------section-8----------------- */
+#section-8 {
+    background: linear-gradient(190deg, #000000c9, #000000ad), url('images/stone-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+#section-8 .contant {
+    text-align: center;
+}
+
+#section-8 .contant .h1-pramary {
+    font-size: 5rem;
+    color: white;
+    letter-spacing: 1rem;
+    font-family: 'Space Mono', monospace;
+
+}
+
+#section-8 .contant .h2-pramary {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: white;
+    letter-spacing: 0.23rem;
+    font-family: 'Space Mono', monospace;
+}
+
+/* footer */
+footer {
+    padding: 2rem 0rem;
+    width: 100%;
+    background-color: #333333;
+    text-align: center;
+}
+
+footer h5 {
+    color: #c7e7e8;
+    font-family: 'Space Mono', monospace;
+
+}
+
+/*---------------------------------------- resposive section---------------------------------------- */
+/*------ desktopes and laptop------ */
+/* @media (min-width:1024px) {
+
+
+
+} */
+
+/* -------tables and ipads----- */
+@media (min-width:769px) and (max-width:1025px) {
+
+    html,
+    body {
+         overflow-x: hidden;
+    }
+
+    .common-section {
+        padding: 0rem;
+    }
+
+    .common-section .right-side .h1-right {
+        font-size: 2rem;
+    }
+
+    .common-section .left-side figure {
+        width: 27rem;
+        height: 19rem;
+        margin: 13rem 0rem 0rem 0rem;
+    }
+
+    #section-5 img {
+        width: 17rem;
+        height: 25rem;
+    }
+
+    .common-middle-section .container {
+        margin: 0rem 1rem;
+    }
+
+    .common-middle-section .container .cantant p {
+        width: 115%;
+        margin-left: 2rem;
+        line-height: 1.5rem
+    }
+
+    .common-middle-section .container .cantant h1 {
+        width: 10rem;
+        font-size: 2rem;
+    }
+
+}
+
+/* ------smart phone----- */
+
+@media (max-width:768px) {
+
+    html,
+    body {
+        /* background-color: yellow;  */
+        overflow-x: hidden;
+        /* padding: 0rem 2rem; */
+
+    }
+
+    header nav {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        height: 100%;
+        width: 50%;
+        background-color: #000000b3;
+        display: grid;
+        place-items: center;
+        transition: 1s linear;
+        /* display: none; */
+    }
+
+    header nav ul li a {
+        color: white;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 34px 12px;
+    }
+
+    header label {
+        color: white;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2rem;
+    }
+
+    #click:checked~nav {
+        left: -100%;
+        display: block;
+    }
+    #click:checked ~ label i::before{
+        content: "\f00d";
+    }
+    header label{
+        display: block;
+    }
+
+    .common-section {
+        padding: 0px 1rem;
+        height: 129vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .common-section .right-side .h1-right {
+        font-size: 2rem;
+    }
+
+    .common-section .right-side {
+        padding: 0rem 1rem;
+    }
+
+    #section-2 {
+        height: 129vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section-2 .left-side figure {
+        margin: 9rem 0rem 0rem 3rem;
+
+    }
+
+    #section-2 h1 {
+        font-size: 2rem;
+
+    }
+
+    .common-middle-section {
+        padding: 0rem 1rem;
+        height: 88vh;
+    }
+
+    .common-middle-section .container {
+        height: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .common-middle-section .center-div {
+        height: 72%;
+    }
+
+    .common-middle-section .container .cantant h1 {
+        font-size: 2rem;
+    }
+
+    .common-middle-section .container .cantant p {
+        margin-left: 0rem;
+    }
+
+    header .contant .h1-pramary {
+        font-size: 3rem;
+    }
+
+    #section-8 .contant .h1-pramary {
+        font-size: 3rem;
+    }
+
+    .water-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:570px) {
+
+    html,
+    body {
+         overflow-x: hidden; 
+    }
+
+    header .contant .h1-pramary {
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+    }
+
+    header .contant .h2-pramary {
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+    }
+
+    #section-8 .contant .h2-pramary {
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: 0.14rem;
+    }
+
+    #section-8 .contant .h1-pramary {
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .common-section .left-side figure {
+        width: 16rem;
+        height: 10rem;
+
+        margin: 13rem 0rem 0rem 0rem;
+    }
+
+    .common-section .left-side img {
+        width: 15rem;
+        height: 12rem;
+
+    }
+
+    #section-2 .boy2-img {
+        width: 13rem;
+        height: 15rem;
+    }
+
+    #section-5 img {
+
+        width: 11rem;
+        height: 13rem;
+        transform: translatey(-11rem);
+    }
+
+    #section-2 .left-side figure {
+        margin: 9rem 0rem 0rem 1rem;
+        width: 17rem;
+    }
+
+    .common-middle-section {
+        padding: 0rem 1rem;
+        height: 116vh;
+    }
+
+    #section-8 .contant .h1-pramary {
+        font-size: 2rem;
+    }
+
+    .common-middle-section .container .cantant h1 {
+        font-size: 2rem;
+        word-break: break-all;
+        width: 17rem;
+    }
+
+    .common-section .right-side button {
+        border: none;
+        margin: 2rem 1rem;
+    }
+}
+/* font size responsive */
+/* margin - padding  */

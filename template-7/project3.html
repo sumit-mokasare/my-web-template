@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* overflow-x: hidden; */
+        }
+        body{
+            overflow: hidden;
+        }
+        .nevbar_preant {
+            height: 14vh;
+            position: relative;
+            display: grid;
+            place-items: center;
+            text-transform: uppercase;
+        }
+
+        .clild {
+            position: absolute;
+            top: 30px;
+            height: 76%;
+            width: 70%;
+            border: 1px solid rgba(128 128 128);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 12px;
+            font-size: 2rem;
+            font-family: 'Aladin', cursive;
+            font-family: 'Cabin Sketch', cursive;
+            font-family: 'Cinzel', serif;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        #font {
+            color: rgba(0, 0, 255, 0.712);
+            font-size: 2rem;
+        }
+
+        ul {
+            list-style: none;
+            position: absolute;
+            right: 165px;
+            display: flex;
+        }
+
+        a {
+            text-decoration: none;
+            color: #040451;
+            padding: 13px 23px;
+            font-size: 1.2rem;
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        .btn {
+            margin-right: 12px;
+        }
+
+        .login_btn {
+            padding: 8px 19px;
+            font-size: 1.1rem;
+            color: white;
+            background-color: #0000ffa8;
+            border-radius: 5px;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .login_btn:hover {
+            background-color: #040451c4;
+            transition: 1.1s;
+        }
+
+        .containar {
+            height: 86vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            height: 70%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .plant_head {
+            font-size: 3rem;
+            margin: 12px 0px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .para {
+            font-family: 'Cabin Sketch', cursive;
+            font-family: 'Aladin', cursive;
+            margin-right: 7px;
+            font-size: 20px
+        }
+
+        .plant_btn {
+            margin-top: 25px;
+            margin-right: 218px;
+        }
+
+        .buy_now {
+            padding: 11px 6px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            text-transform: capitalize;
+            margin-left: 12px;
+            cursor: pointer;
+        }
+
+        #btn_1 {
+            color: white;
+            background-color: #0000ffa8;
+        }
+
+        #btn_1:hover {
+            background-color: rgba(0, 0, 0, 0.808);
+            color: white;
+            transition: 1.1s;
+        }
+
+        #btn_2 {
+            color: black;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        }
+
+        #btn_2:hover {
+            background-color: #0000ffa8;
+            color: white;
+            transition: 1.1s;
+        }
+
+        .box2 {
+            height: 70%;
+            width: 50%;
+            border-top-left-radius: 221px;
+            border-bottom-left-radius: 221px;
+            background-color: #0000ffa8;
+            position: relative;
+        }
+
+        .plant_img {
+            position: absolute;
+            top: -111px;
+            left: 161px;
+            width: 396px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nevbar_preant">
+            <div class="clild">
+                <div class="logo link">
+                    <h4 class="logo_h4"><i id="font" class="fa-solid fa-leaf"></i>plant eco</h4>
+                </div>
+                <ul >
+                    <li class="link"><a href="#">home</a></li>
+                    <li class="link"><a href="#">about</a></li>
+                    <li class="link"><a href="#">Contect</a></li>
+                </ul>
+                <div class="btn">
+                    <button class="login_btn link">login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="containar">
+        <div class="box1">
+            <h3 class="plant_head">Plants mode Easy</h3>
+            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, autem!</p>
+            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, autem!</p>
+            <div class="plant_btn">
+                <button id="btn_1" class="buy_now"> <i id="font_shopping" class="fa-solid fa-cart-shopping"></i>buy
+                    now</button>
+                <button id="btn_2" class="buy_now"><i class="fa-solid fa-basket-shopping"></i>add to card</button>
+            </div>
+        </div>
+        <div class="box2">
+            <img class="plant_img" src="./gamala-removebg-preview (2).png" alt="">
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./style.js"></script>
+
+</html>

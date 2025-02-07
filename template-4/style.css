@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(69, 164, 102); */
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    /* width:100; */
+    height: 100vh;
+    /* position: relative; */
+    background: #040303;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    font-family: 'Space Mono', monospace;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 1rem 2rem;
+}
+
+header nav ul li a {
+    font-size: 1.23rem;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    transition: 0.23s linear;
+}
+
+header nav ul li a:hover {
+    color: red;
+
+}
+
+header nav .logo {
+    color: whitesmoke;
+    font-size: 2rem;
+    letter-spacing: 0.20rem;
+    text-transform: capitalize;
+    margin-left: 3rem;
+font-family: 'MuseoModerno','Courier New', Courier, monospace;
+}
+
+header nav .logo span {
+    color: #FFDE00;
+
+}
+
+.main {
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    position: relative;
+}
+
+.contant p {
+    font-size: 3vw;
+    text-transform: capitalize;
+    margin: 1rem 0rem;
+    font-family: 'MuseoModerno', 'Courier New', Courier, monospace;
+}
+
+.contant p span,
+h1 span {
+    color: red;
+}
+
+.contant p samp,
+h1 {
+    text-transform: uppercase;
+    font-size: 5vw;
+    line-height: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+.image-right {
+    z-index: 1;
+    position: relative;
+}
+
+.image-right::before {
+    content: "";
+    background: #FFDE00;
+    width: 357px;
+    height: 357px;
+    position: absolute;
+    top: 4%;
+    border-radius: 73% 27% 41% 59% / 37% 54% 46% 63%;
+    z-index: -1;
+}
+
+.image-right::after {
+    content: "";
+    background: red;
+    width: 100%;
+    height: 2%;
+    position: absolute;
+    top: 99%;
+    right: 11%;
+}
+
+.image-right img {
+    max-width: 370px;
+    height: auto;
+    filter: drop-shadow(46px 25px 23px #040303);
+}
+
+header nav input,
+header nav label {
+    display: none;
+}
+
+@media (max-width:950px) {
+    header nav .logo {
+        margin-left:1rem ;
+    }
+    header nav ul {
+        background-color: #040303;
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 100%;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        transition: 0.50s linear;
+    }
+
+    #click:checked~ul {
+        right: 50%;
+    }
+
+    #click:checked~label i::before {
+        content: "\f00d";
+    }
+
+    header nav label i {
+        color: white;
+        margin-right: 3rem;
+        font-size: 1.50rem;
+    }
+
+    header nav label {
+        display: block;
+    }
+
+    .image-right img {
+        width: 333px;
+    }
+
+    .image-right::before {
+        width: 333px;
+    }
+}
+
+@media (max-width:750px) {
+
+    header nav ul {
+        height: 122%;
+    }
+
+    header {
+        height: 122vh;
+
+    }
+
+    .main {
+        flex-direction: column;
+        height: 90%;
+    }
+    .contant p  {
+        font-size: 5vw;
+    }
+
+    .contant h1 {
+        font-size: 7vw;
+    }
+    }
+
+  
+
+
+@media (max-width:445px) {
+    header nav ul {
+        height: 122%;
+    }
+
+    .main {
+        height: 90%;
+    }
+
+    .image-right img {
+        width: 277px;
+    }
+
+    .image-right::before {
+        width: 277px;
+    }
+
+    .contant p  {
+        font-size: 6vw;
+    }
+
+    .contant h1 {
+        font-size: 9vw;
+    }
+}

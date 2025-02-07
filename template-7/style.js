@@ -1,0 +1,5 @@
+gsap.from('.nevbar_preant',{duration:1,y:"-100%",ease:'bounce'})
+gsap.from('.link',{duration:2, opacity:0,delay:1,stagger:.3})
+gsap.from('.box2',{duration:1,delay:2,x:'100%',ease:'back'})
+gsap.from('.plant_img',{duration:1,delay:3,x:'170%',ease:'power1'})
+gsap.from('.box1',{duration:1,delay:4,y:'100%',ease:'back'})

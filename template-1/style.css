@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+}
+.contant{
+    margin-top:5rem;
+    display: grid;
+    place-items: center;
+    line-height: 3rem;
+}
+
+.contant h1{
+    text-align: center;
+    font-size: clamp(30px , 5vw , 150px);
+    margin: 2rem 0;
+    font-weight: 300;
+}
+.contant p{
+    font-size:clamp(18px , 1vw , 100px);
+    text-align: center;
+}
+button{
+    padding:8px 14px;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    margin-top: 2rem;
+    border: 2px solid orangered;
+    font-weight: 700;
+    transition: .6s;
+}
+button:hover{
+    background-color: orangered;
+    color: white;
+}
+.container{
+    position: relative;
+    top:90px;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    /* border: 1px solid yellow; */
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    margin: 0 3%;
+}
+.card{
+    margin: 12px 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse ;
+    flex: 1 1 10rem;
+    align-self:normal;
+    background-color:#ee6b15;
+    color: white;
+    line-height: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.card h5{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 12px;
+}
+.card .para{
+    font-size: 2rem;
+    margin: 12px;
+}
+
+.img-div img{
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+}
